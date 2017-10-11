@@ -53,15 +53,25 @@ body {
   flex-direction:column;
   justify-content:space-between;
   align-items:center;
+  width:95%;
+  padding:-5%;
+}
+#flexnav {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  float:left;
+  position:fixed; top:30%;
 }
 
 .left {
   float:left;
-  width:35%;
+  width:40%;
 }
 .right {
   float:right;
-  width:35%;
+  width:40%;
 }
 
 h1 {
@@ -74,7 +84,7 @@ h1 {
   text-align: justify;
 }
 
-#bordertop {
+.bordertop {
   border-top: solid 7px black;
   border-radius:10px;
 }
@@ -82,18 +92,20 @@ h1 {
   border-top: double black 7px;
   width:70%;
 }
-#borderbottom {
+.borderbottom {
   border-bottom: solid 7px black;
   border-radius:10px;
   width:70%;
 }
 
-.circlew:before {
-  font-family:'fontello';
-  content: '\f1db';
+.centerblock{
+  padding-left:35%;
+}
+
+.fa {
   color:black;
 }
-.circleb {
-  font-family:'f';
-  content: '\f111';
+
+.icon {
+  font-size:250%;
 }
