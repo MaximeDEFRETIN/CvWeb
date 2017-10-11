@@ -13,29 +13,6 @@
            	font-weight: normal;
             font-style: normal; }
 
-            @font-face {
-              font-family: 'fontello';
-              src: url('fontello.eot');
-              src: url('fontello.eot#iefix') format('embedded-opentype'),
-                   url('fontello.woff2') format('woff2'),
-                   url('fontello.woff') format('woff'),
-                   url('fontello.ttf') format('truetype'),
-                   url('fontello.svg#fontello') format('svg');
-              font-weight: normal;
-              font-style: normal; }
-
-              @font-face {
-                font-family: 'f1';
-                src: url('f1.eot?11688487');
-                src: url('f1.eot?11688487#iefix') format('embedded-opentype'),
-                     url('f1.woff2?11688487') format('woff2'),
-                     url('f1.woff?11688487') format('woff'),
-                     url('f1.ttf?11688487') format('truetype'),
-                     url('f1.svg?11688487#fontello') format('svg');
-                font-weight: normal;
-                font-style: normal;}
-
-
 body {
   font-family:'mara2', Time New Roman;
   font-size:150%;
@@ -54,24 +31,26 @@ body {
   justify-content:space-between;
   align-items:center;
   width:95%;
-  padding:-5%;
 }
 #flexnav {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   align-items:center;
+  width:5%;
   float:left;
-  position:fixed; top:30%;
+  position:fixed; top:20%;
 }
 
 .left {
   float:left;
-  width:40%;
+  width:50%;
+  text-align:justify;
 }
 .right {
   float:right;
-  width:40%;
+  width:50%;
+  text-align:justify;
 }
 
 h1 {
@@ -81,9 +60,8 @@ h1 {
 
 .size {
   width:70%;
-  text-align: justify;
+  text-align: center;
 }
-
 .bordertop {
   border-top: solid 7px black;
   border-radius:10px;
@@ -99,13 +77,35 @@ h1 {
 }
 
 .centerblock{
-  padding-left:35%;
+  padding-left:23%;
 }
 
 .fa {
   color:black;
 }
-
 .icon {
   font-size:250%;
+  margin:20px;
+}
+
+@media screen and (max-width: 320px){
+  .icon {
+    margin:10px;
+    font-size:150%;
+  }
+
+  h1 {
+    font-size:150%;
+  }
+
+  .right {
+    width:45%;
+  }
+  .left {
+    width:45%;
+  }
+
+  .centerblock{
+    padding-left:15%;
+  }
 }
