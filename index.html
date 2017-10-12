@@ -2,14 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!--J'i intégré le CDN de Boostrap de Font Awesome pour pouvoir me servir de leur grilles et icônes respectifs-->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>C.V. numérique</title>
 </head>
 <body>
+  <!--Flexbox est utilisé pur pouvoir mettre la barre de navigation sur le coté-->
   <nav id="flexnav">
     <div class="icon">
+      <!--J'ai utilisé les ancres pour que le menu renvoie vers les parties du C.V.-->
       <a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
     </div>
     <div class="icon">
@@ -22,6 +25,7 @@
       <a href="#competence"><i class="fa fa-tasks" aria-hidden="true"></i></a>
     </div>
     <div class="icon">
+      <!--"fa fa-users" est une class qui permet de faire appele à l'icône correspondante du CDN de Font Awesome-->
       <a href="#benevolat"><i class="fa fa-users" aria-hidden="true"></i></a>
     </div>
     <div class="icon">
@@ -93,12 +97,17 @@
       <div class="border"></div>
       <div id="competence" class="size">
         <h1>Mes compétences</h1>
+        <!--Toute la partie Compétence est contenu dans la div class="container"-->
         <div class="container centerblock">
+          <!--Chaque compétence est contenu dans une ligne-->
           <div class="row">
+            <!--Chaque nom de compétence est contenu dans une colonne-->
             <div class=" col-lg-4">
               <p>Git/Github</p>
             </div>
+            <!--La barre de progression est contenu dans une colonne-->
             <div class=" col-lg-4">
+              <!--Chaque ligne représente une un cercle de lla barre de progresion-->
               <span><i class="fa fa-circle" aria-hidden="true"></i></span>
               <span><i class="fa fa-circle" aria-hidden="true"></i></span>
               <span><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
@@ -175,6 +184,7 @@
         </div>
       </div>
       <div class="border"></div>
+      <!--On ne peut mettre qu'une seule id par balise, mais on peut mettre plusieurs class-->
       <div id="benevolat" class="borderbottom size">
         <h1>Bénévolat</h1>
         <div class="left">
