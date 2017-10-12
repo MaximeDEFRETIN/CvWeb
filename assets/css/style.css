@@ -29,8 +29,9 @@ body {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  align-items:center;
-  width:95%;
+  align-items:right;
+  width:90%;
+  float:left;
 }
 #flexnav {
   display:flex;
@@ -88,14 +89,17 @@ h1 {
   margin:20px;
 }
 
-@media screen and (max-width: 320px){
+@media all and (max-width: 320px) and (max-height: 480px){
   .icon {
-    margin:10px;
+    margin:10px 0 10px 10px;
     font-size:150%;
+  }
+  #flexnav{
+    top:15%;
   }
 
   h1 {
-    font-size:150%;
+    font-size:140%;
   }
 
   .right {
@@ -107,5 +111,51 @@ h1 {
 
   .centerblock{
     padding-left:15%;
+  }
+}
+
+@media all and (max-width: 480px) and (max-height:320px){
+  .icon {
+    margin:0 0 10px 10px;
+    font-size:150%;
+  }
+  #flexnav{
+    top:10%;
+  }
+  .centerblock{
+    padding-left:0;
+  }
+  .right {
+    width:45%;
+  }
+  .left {
+    width:45%;
+  }
+}
+
+@media all and (max-width: 768px) and (max-height:1024px){
+  .right {
+    width:45%;
+  }
+  .left {
+    width:45%;
+  }
+  .centerblock{
+    padding-right:78%;
+  }
+}
+
+@media all and (max-width: 1024px) and (max-height:768px){
+  .right {
+    width:45%;
+  }
+  .left {
+    width:45%;
+  }
+  .centerblock{
+    padding-right:78%;
+  }
+  #flexnav{
+    top:15%;
   }
 }
